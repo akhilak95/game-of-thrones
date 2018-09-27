@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row" *ngIf='data==1 && currentimg  '>
+    <div class="col">
+      <div>
+        <img class="card-img-top" src="{{currentimg.img}}" style="height: 40vh;width: 30vw;display: block;margin-left: auto;margin-right: auto;margin-top:3rem;">
+        <div class="" style="font-style:bold;margin-top:2rem;">
+          <h5>Name</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.name}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Gender</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.gender}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Culture</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.culture}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Born</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.born}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Died</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.died}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Titles</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.titles}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Aliases</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.aliases}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Father</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.father}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Mother</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.mother}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Spouse</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.spouse}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Tv Series</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.tvSeries}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Played By</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.playedBy}}</h5>
+        </div>
+      </div>
+      <div style="text-align: center;margin: 10px;">
+        <button type="button" class="btn btn-dark" (click)="gobacktoprevpage()"> Back</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

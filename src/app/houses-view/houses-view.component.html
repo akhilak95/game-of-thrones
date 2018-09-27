@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row" *ngIf='data ==1 && currentimg'>
+    <div class="col">
+      <div>
+        <img class="card-img-top" src="{{currentimg.img}}" style="height: 40vh;width: 30vw;display: block;margin-left: auto;margin-right: auto;margin-top:3rem;">
+        <div class="" style="font-style:bold;margin-top:2rem;">
+          <h5>Name</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.name}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Region</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.region}}</h5>
+        </div>
+        <div style="font-style:bold;">
+          <h5>Court Of Arms</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.coatOfArms}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Words</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.words}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Titles</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.titles}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Seats</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.seats}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Founded</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.founded}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Died Out</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.diedOut}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Ancestral Weapons</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.ancestralWeapons}}</h5>
+        </div>
+
+
+      </div>
+      <div style="text-align: center;margin: 10px;">
+        <button type="button" class="btn btn-dark" (click)="gobacktoprevpage()"> Back</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

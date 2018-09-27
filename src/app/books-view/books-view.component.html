@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row" *ngIf='data==1 && currentimg '>
+    <div class="col">
+      <div>
+        <img class="card-img-top" src="{{currentimg.img}}" style="height: 40vh;width: 30vw;display: block;margin-left: auto;margin-right: auto;margin-top:3rem;">
+        <div class="" style="font-style:bold;margin-top:2rem;">
+          <h5>Name</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.name}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Isbn</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.isbn}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Authors</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.authors}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Number of pages</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.numberOfPages}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Publisher</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.publisher}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Country</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.country}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>MediaType</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.mediaType}}</h5>
+        </div>
+        <div style="font-style:bold">
+          <h5>Released On</h5>
+        </div>
+        <div class="content">
+          <h5>{{currentdata.released|date}}</h5>
+        </div>
+      </div>
+      <div style="text-align: center;margin: 10px;">
+        <button type="button" class="btn btn-dark" (click)="gobacktoprevpage()"> Back</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
